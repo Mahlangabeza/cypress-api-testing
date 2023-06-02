@@ -1,4 +1,3 @@
-require("cypress-xpath");
 describe("Getting data", () => {
   it("Should pull data from the json file", () => {
     cy.visit("http://zero.webappsecurity.com/login.html");

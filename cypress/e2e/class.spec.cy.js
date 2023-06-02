@@ -1,5 +1,3 @@
-const { before, after } = require("cypress/types/lodash");
-
 class HomeBase {
   static loadPage() {
     cy.visit("https://devexpress.github.io/testcafe/example/");
