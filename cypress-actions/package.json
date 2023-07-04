@@ -1,0 +1,25 @@
+{
+  "name": "cypress-actions",
+  "version": "1.0.0",
+  "description": "cypress automation framework with app actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Martin Mahlangabeza",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.16.0",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2"
+  }
+}
