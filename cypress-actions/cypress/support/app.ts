@@ -12,6 +12,10 @@ declare namespace Cypress {
      * Navigates to the Feed back page of the application
      */
     visitFeedBackPage(): Chainable<Element>
+    /**
+     * @param seconds - length of time in seconds
+     */
+    waitForSeconds(seconds: number): Chainable<Element>
   }
 }
 
@@ -25,4 +29,8 @@ Cypress.Commands.add('visitLoginPage', () => {
 
 Cypress.Commands.add('visitFeedBackPage', () => {
   cy.visit('http://zero.webappsecurity.com/feedback.html')
+})
+
+Cypress.Commands.add('waitForSeconds', (seconds) => {
+  cy.wait(seconds * 1000)
 })
