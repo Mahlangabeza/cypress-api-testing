@@ -1,0 +1,21 @@
+{
+	"name": "cypress-page-objects",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:run": "cypress run",
+		"cy:run:chrome": "cypress run --browser chrome",
+		"cy:run:firefox": "cypress run --browser firefox",
+		"cy:run:edge": "cypress run --browser edge",
+		"cy:run-dashboard": "cypress run --record --key 0bd67f60-e5b4-415e-9226-6ee4e3486c6e"
+	},
+	"author": "Martin Mahlangabeza",
+	"license": "ISC",
+	"dependencies": {
+		"copyfiles": "^2.4.1",
+		"cypress": "^12.17.2",
+		"prettier": "^3.0.0"
+	}
+}
