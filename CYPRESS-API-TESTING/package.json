@@ -1,0 +1,21 @@
+{
+  "name": "cypress-api-testing",
+  "version": "1.0.0",
+  "description": "api testing with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "js",
+    "api",
+    "testing"
+  ],
+  "author": "Martin Mahlangabeza",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.2",
+    "prettier": "^3.0.0"
+  }
+}
