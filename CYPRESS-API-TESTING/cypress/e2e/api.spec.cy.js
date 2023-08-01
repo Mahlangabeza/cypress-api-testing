@@ -56,4 +56,25 @@ describe('template spec', () => {
       expect(response.body.id).to.be.a('number')
     })
   })
+  it('API tests - DELETE', () => {
+    cy.request({
+      url: 'https://jsonplaceholder.typicode.com/posts/1',
+      method: 'DELETE',
+    }).as('removePost')
+    cy.get('@removePost').its('status').should('equal', 200)
+  })
+
+  it('API test - PUT', () => {
+    cy.request({
+      url: 'https://jsonplaceholder.typicode.com/posts/1',
+      method: 'PUT',
+      body: { id: 1, title: 'foo', body: 'bar', userId: 1 },
+    }).as('put')
+    cy.request('@put').its('status').should('equal', 200)
+    cy.get('@put').then((response) => {
+      expect(response.body.id).to.be.a('number')
+      expect(response.body.body).to.be.a('string')
+      expect(response.body.userId).to.equal(1)
+    })
+  })
 })
